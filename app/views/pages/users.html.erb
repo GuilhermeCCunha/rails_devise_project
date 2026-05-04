@@ -1,2 +1,8 @@
 <h1>Pages#users</h1>
 <p>Find me in app/views/pages/users.html.erb</p>
+<% if current_user %>
+  <p>Welcome, <%= current_user.email %>!</p>
+<% elsif current_admin %>
+  <p>Welcome, <%= current_admin.email %>!</p>
+  <p>The admin can also access this page.</p>
+<% end %>
