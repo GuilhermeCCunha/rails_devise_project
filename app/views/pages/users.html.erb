@@ -2,7 +2,9 @@
 <p>Find me in app/views/pages/users.html.erb</p>
 <% if current_user %>
   <p>Welcome, <%= current_user.email %>!</p>
+  <%= link_to "Sign out", destroy_user_session_path, method: :delete, data: { turbo_method: :delete } %>
 <% elsif current_admin %>
   <p>Welcome, <%= current_admin.email %>!</p>
   <p>The admin can also access this page.</p>
+  <%= link_to "Sign out", destroy_admin_session_path, method: :delete, data: { turbo_method: :delete } %>
 <% end %>
