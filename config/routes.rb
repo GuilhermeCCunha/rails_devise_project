@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
   devise_for :admins, controllers: {
-    sessions: 'admin/sessions',
-    registrations: 'admin/registrations'
+    sessions: 'admins/sessions',
+    registrations: 'admins/registrations'
   }
 
   devise_for :users, controllers: {
-    sessions:  'users/sessions'  
+    sessions: 'users/sessions'
   }
-        
+
   root 'pages#home'
   get 'pages/users'
   post 'pages/ban/:id', to: 'pages#ban_user', as: 'pages_ban_user'
@@ -18,4 +18,4 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
 end
- 
+
