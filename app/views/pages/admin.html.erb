@@ -1,7 +1,7 @@
 <h1>Pages#admin</h1>
 <p>Find me in app/views/pages/admin.html.erb</p>
 <% if @users.count > 0 %>
-  <table class="table table-hover">
+  <table class="table table-hover w-75 mx-auto">
     <thead class="table-dark">
       <tr>
         <th>Email</th>
@@ -12,13 +12,13 @@
     <tbody>
       <% @users.each do |user| %>
         <tr>
-          <td><%= user.email %></td>
-          <td>
+          <td class="col-6"><%= user.email %></td>
+          <td class="col-3">
             <span class="<%= user.access_locked? ? 'text-danger' : 'text-success' %>">
               <%= user.access_locked? ? 'Banned' : 'Active' %>
             </span>
           </td>
-          <td>
+          <td class="col-3">
             <% if user.access_locked? %>
               <%= button_to 'Unban', pages_unban_user_path(user), class: "btn btn-success", method: :post %>
             <% else %>
@@ -31,6 +31,6 @@
   </table>
 <% else %>
   <br>
-  <p class="font-weight-bold text-danger text-center"> No user registered! </p>
+  <p class="fw-bold text-danger text-center"> No user registered! </p>
   <br>
 <% end %>
