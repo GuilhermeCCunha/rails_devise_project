@@ -1,7 +1,7 @@
 <h1>Pages#admin</h1>
 <p>Find me in app/views/pages/admin.html.erb</p>
 <% if @users.count > 0 %>
-  <table class="table table-hover w-75 mx-auto">
+  <table class="mb-4 table table-hover w-75 mx-auto">
     <thead class="table-dark">
       <tr>
         <th>Email</th>
@@ -34,3 +34,7 @@
   <p class="fw-bold text-danger text-center"> No user registered! </p>
   <br>
 <% end %>
+<div class="d-flex flex-column align-items-center">
+  <%= link_to "Edit registration", edit_admin_registration_path %>
+  <%= link_to "Sign out", destroy_admin_session_path, method: :delete, data: { turbo_method: :delete } %>
+</div>
