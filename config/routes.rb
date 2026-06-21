@@ -13,7 +13,8 @@ Rails.application.routes.draw do
   get 'pages/users'
   post 'pages/ban/:id', to: 'pages#ban_user', as: 'pages_ban_user'
   post 'pages/unban/:id', to: 'pages#unban_user', as: 'pages_unban_user'
-  get 'pages/admin', to: 'pages#admin', as: 'pages_admin'
+  get 'admin/dashboard', to: 'pages#admin', as: 'admin_dashboard'
+  get 'pages/admin', to: redirect('/admin/dashboard')
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
