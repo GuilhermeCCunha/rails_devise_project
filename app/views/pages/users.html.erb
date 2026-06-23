@@ -9,6 +9,7 @@
   <% elsif current_admin %>
     <p class="fs-3">Welcome, <%= current_admin.email %>!</p>
     <p class="fs-4">The admin can also access this page.</p>
+    <%= link_to "Admin Dashboard", admin_dashboard_path, class:"btn btn-primary btn-lg mb-3", role:"button" %>
     <%= link_to "Edit registration", edit_admin_registration_path %>
     <%= link_to "Sign out", destroy_admin_session_path, method: :delete, data: { turbo_method: :delete } %>
   <% end %>
