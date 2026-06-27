@@ -10,7 +10,8 @@ Rails.application.routes.draw do
   }
 
   root 'pages#home'
-  get 'pages/users'
+  get 'pages/profile', to: 'pages#users', as: 'pages_profile'
+  get 'pages/users', to: redirect('/pages/profile')
   post 'pages/ban/:id', to: 'pages#ban_user', as: 'pages_ban_user'
   post 'pages/unban/:id', to: 'pages#unban_user', as: 'pages_unban_user'
   get 'admin/dashboard', to: 'pages#admin', as: 'admin_dashboard'
