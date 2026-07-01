@@ -1,7 +1,6 @@
 <% content_for :title, "Profile Page" %>
-<h1>Profile Page</h1>
+<h1 class="default-heading">Profile Page</h1>
 <div class="d-flex flex-column align-items-center">
-  <p>Find me in app/views/pages/users.html.erb</p>
   <% if current_user %>
     <p class="fs-3">Welcome, <%= current_user.email %>!</p>
     <%= link_to "Edit registration", edit_user_registration_path %>
