@@ -15,6 +15,11 @@
             <%= link_to "Sign in", new_user_session_path, class: "nav-link #{'active' if current_page?(new_user_session_path)}" %>
           <% end %>
         </li>
+        <% if admin_signed_in? %>
+          <li class="nav-item">
+            <%= link_to "Dashboard", admin_dashboard_path, class:"nav-link #{'active' if current_page?(admin_dashboard_path)}" %>
+          </li>
+        <% end %>
       </ul>
     </div>
   </div>
