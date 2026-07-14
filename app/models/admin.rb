@@ -3,4 +3,17 @@ class Admin < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
+
+  MAX_ADMINS = 5
+
+  validate :forbid_extra_admin_creation, on: :create
+
+  private
+
+  def forbid_extra_admin_creation
+    if Admin.count >= MAX_ADMINS
+      errors.add(:base, "Registrations is closed. The maximum limit of #{MAX_ADMINS} admins has been reached.")
+    end
+  end
+
 end
