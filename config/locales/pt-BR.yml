@@ -1,0 +1,8 @@
+pt-BR:
+  hello: "Hello world"
+  locale_name: "Português"
+  nav_links:
+    sign_in: "Login"
+    home: "Início"
+    profile: "Perfil"
+    dashboard: "Painel"

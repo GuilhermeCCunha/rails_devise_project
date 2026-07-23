@@ -8,18 +8,18 @@
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <%= nav_link_to 'Home', root_path %>
+          <%= nav_link_to t('nav_links.home'), root_path %>
         </li>
         <li class="nav-item">
           <% if user_signed_in? || admin_signed_in? %>
-            <%= nav_link_to "Profile", pages_profile_path %>
+            <%= nav_link_to t('nav_links.profile'), pages_profile_path %>
           <% else %>
-            <%= nav_link_to "Sign in", new_user_session_path %>
+            <%= nav_link_to t('nav_links.sign_in'), new_user_session_path %>
           <% end %>
         </li>
         <% if admin_signed_in? %>
           <li class="nav-item">
-            <%= nav_link_to "Dashboard", admin_dashboard_path %>
+            <%= nav_link_to t('nav_links.dashboard'), admin_dashboard_path %>
           </li>
         <% end %>
       </ul>
