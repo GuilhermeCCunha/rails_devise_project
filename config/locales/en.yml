@@ -32,8 +32,13 @@
 en:
   hello: "Hello world"
   locale_name: "English"
+  links:
+    sign_in: "Sign in"
   nav_links:
     sign_in: "Sign in"
     home: "Home"
     profile: "Profile"
     dashboard: "Dashboard"
+  titles:
+    home: "Home Page"
+    profile: "Profile Page"

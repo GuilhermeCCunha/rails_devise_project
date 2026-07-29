@@ -1,8 +1,15 @@
 pt-BR:
-  hello: "Hello world"
-  locale_name: "Português"
+  hello: "Olá mundo"
+  locale_name: "Português (BR)"
+  links:
+    sign_in: "Login"
   nav_links:
     sign_in: "Login"
     home: "Início"
     profile: "Perfil"
     dashboard: "Painel"
+  titles:
+    home: "Página Inicial"
+    profile: "Página de Perfil"
+  messages:
+    created_with: "Criado com"
