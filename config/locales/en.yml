@@ -34,6 +34,8 @@ en:
   locale_name: "English"
   links:
     sign_in: "Sign in"
+    sign_out: "Sign out"
+    edit_registration: "Edit registration"
   nav_links:
     sign_in: "Sign in"
     home: "Home"
@@ -42,3 +44,8 @@ en:
   titles:
     home: "Home Page"
     profile: "Profile Page"
+    dashboard: "Admin Dashboard"
+  messages:
+    created_with: "Created with"
+    admin_access_text: "The admin can also access this page."
+    welcome_email: "Welcome, %{email}!"

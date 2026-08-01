@@ -3,6 +3,8 @@ pt-BR:
   locale_name: "Português (BR)"
   links:
     sign_in: "Login"
+    sign_out: "Sair"
+    edit_registration: "Editar cadastro"
   nav_links:
     sign_in: "Login"
     home: "Início"
@@ -11,5 +13,8 @@ pt-BR:
   titles:
     home: "Página Inicial"
     profile: "Página de Perfil"
+    dashboard: "Painel do Admin"
   messages:
     created_with: "Criado com"
+    admin_access_text: "O admin também pode acessar esta página."
+    welcome_email: "Bem-vindo, %{email}!"
