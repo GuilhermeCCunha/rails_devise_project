@@ -18,3 +18,12 @@ pt-BR:
     created_with: "Criado com"
     admin_access_text: "O admin também pode acessar esta página."
     welcome_email: "Bem-vindo, %{email}!"
+    no_users: "Nenhum usuário cadastrado!"
+  users_table:
+    email: "E-mail"
+    status: "Status"
+    action: "Ação"
+    banned: "Banido"
+    active: "Ativo"
+    ban: "Banir" # Opções: "Bloquear" ou "Desativar"
+    unban: "Desbanir" # Opções: "Desbloquear" ou "Reativar"

@@ -49,3 +49,12 @@ en:
     created_with: "Created with"
     admin_access_text: "The admin can also access this page."
     welcome_email: "Welcome, %{email}!"
+    no_users: "No users registered!"
+  users_table:
+    email: "Email"
+    status: "Status"
+    action: "Action"
+    banned: "Banned"
+    active: "Active"
+    ban: "Ban"
+    unban: "Unban"
