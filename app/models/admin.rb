@@ -12,7 +12,7 @@ class Admin < ApplicationRecord
 
   def forbid_extra_admin_creation
     if Admin.count >= MAX_ADMINS
-      errors.add(:base, "Registrations is closed. The maximum limit of #{MAX_ADMINS} admins has been reached.")
+      errors.add(:base, :limit_reached, count: MAX_ADMINS)
     end
   end
 

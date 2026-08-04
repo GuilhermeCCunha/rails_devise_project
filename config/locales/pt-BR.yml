@@ -27,3 +27,12 @@ pt-BR:
     active: "Ativo"
     ban: "Banir" # Opções: "Bloquear" ou "Desativar"
     unban: "Desbanir" # Opções: "Desbloquear" ou "Reativar"
+  activerecord:
+    errors:
+      models:
+        admin:
+          attributes:
+            base:
+              limit_reached:
+                one: "Cadastro encerrado. O limite máximo de %{count} admin foi atingido."
+                other: "Cadastro encerrado. O limite máximo de %{count} admins foi atingido."

@@ -58,3 +58,12 @@ en:
     active: "Active"
     ban: "Ban"
     unban: "Unban"
+  activerecord:
+    errors:
+      models:
+        admin:
+          attributes:
+            base:
+              limit_reached:
+                one: "Registration is closed. The maximum limit of %{count} admin has been reached."
+                other: "Registration is closed. The maximum limit of %{count} admins has been reached."
