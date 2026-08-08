@@ -4,6 +4,7 @@ pt-BR:
   links:
     sign_in: "Login"
     sign_out: "Sair"
+    sign_in_as_admin: "Login como Admin"
     edit_registration: "Editar cadastro"
   nav_links:
     sign_in: "Login"
@@ -28,6 +29,10 @@ pt-BR:
     ban: "Banir" # Opções: "Bloquear" ou "Desativar"
     unban: "Desbanir" # Opções: "Desbloquear" ou "Reativar"
   users:
+    sessions:
+      new:
+        sign_in: "Login"
+        title: "%{resource} Login"
     shared:
       links:
         back: "Voltar"
@@ -38,6 +43,10 @@ pt-BR:
         sign_in_with_provider: "Entrar com %{provider}"
         sign_up: "Inscrever-se"
   activerecord:
+    models:
+      user:
+        one: "Usuário"
+        other: "Usuários"
     attributes:
       user:
         current_password: "Senha atual"

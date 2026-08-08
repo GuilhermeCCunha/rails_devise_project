@@ -1,5 +1,5 @@
-<% content_for :title, "#{resource_name.to_s.humanize} Log in" %>
-<h2 class="form-heading">Log in</h2>
+<% content_for :title, t('.title', resource: resource_class.model_name.human) %>
+<h2 class="form-heading"><%= t('.sign_in') %></h2>
 
 <% if flash[:alert] %>
   <div class="d-flex justify-content-center" role="alert">
@@ -31,11 +31,11 @@
     <% end %>
 
     <div class="mb-3 d-flex align-items-center justify-content-center">
-      <%= f.submit "Log in", class:"btn btn-lg btn-primary" %>
+      <%= f.submit t('.sign_in'), class:"btn btn-lg btn-primary" %>
     </div>
 
     <%= render "users/shared/links" %>
-    <%= link_to "Sign in as Admin", new_admin_session_path %>
+    <%= link_to t('links.sign_in_as_admin'), new_admin_session_path %>
 
   </div>
 <% end %>
