@@ -28,7 +28,7 @@ pt-BR:
     active: "Ativo"
     ban: "Banir" # Opções: "Bloquear" ou "Desativar"
     unban: "Desbanir" # Opções: "Desbloquear" ou "Reativar"
-  users:
+  users: &resource_translations
     sessions:
       new:
         sign_in: "Login"
@@ -42,24 +42,22 @@ pt-BR:
         sign_in: "Login"
         sign_in_with_provider: "Entrar com %{provider}"
         sign_up: "Inscrever-se"
+  admins:
+    <<: *resource_translations
   activerecord:
     models:
       user:
         one: "Usuário"
         other: "Usuários"
     attributes:
-      user:
+      user: &user_attributes
         current_password: "Senha atual"
         email: "E-mail"
         password: "Senha"
         password_confirmation: "Confirme sua senha"
         remember_me: "Lembre-se de mim"
       admin:
-        current_password: "Senha atual"
-        email: "E-mail"
-        password: "Senha"
-        password_confirmation: "Confirme sua senha"
-        remember_me: "Lembre-se de mim"
+        <<: *user_attributes
     errors:
       models:
         admin:

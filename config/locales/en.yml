@@ -59,7 +59,7 @@ en:
     active: "Active"
     ban: "Ban"
     unban: "Unban"
-  users:
+  users: &resource_translations
     sessions:
       new:
         sign_in: "Log in"
@@ -73,6 +73,8 @@ en:
         sign_in: "Log in"
         sign_in_with_provider: "Sign in with %{provider}"
         sign_up: "Sign up"
+  admins:
+    <<: *resource_translations
   activerecord:
     errors:
       models:
