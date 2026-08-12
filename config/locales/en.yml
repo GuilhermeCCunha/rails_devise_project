@@ -60,6 +60,10 @@ en:
     ban: "Ban"
     unban: "Unban"
   users: &resource_translations
+    registrations:
+      new:
+        sign_up: "Sign up"
+        title: "Sign up %{resource}"
     sessions:
       new:
         sign_in: "Log in"
@@ -73,6 +77,9 @@ en:
         sign_in: "Log in"
         sign_in_with_provider: "Sign in with %{provider}"
         sign_up: "Sign up"
+      minimum_password_length:
+        one: "(%{count} character minimum)"
+        other: "(%{count} characters minimum)"
   admins:
     <<: *resource_translations
   activerecord:
