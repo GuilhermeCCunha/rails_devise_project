@@ -61,6 +61,14 @@ en:
     unban: "Unban"
   users: &resource_translations
     registrations:
+      edit:
+        are_you_sure: "Are you sure?"
+        cancel_my_account: "Cancel my account"
+        leave_blank_if_you_don_t_want_to_change_it: "leave blank if you don't want to change it"
+        title: "Edit %{resource}"
+        unhappy: "Unhappy?"
+        update: "Update"
+        we_need_your_current_password_to_confirm_your_changes: "we need your current password to confirm your changes"
       new:
         sign_up: "Sign up"
         title: "Sign up %{resource}"
@@ -78,8 +86,8 @@ en:
         sign_in_with_provider: "Sign in with %{provider}"
         sign_up: "Sign up"
       minimum_password_length:
-        one: "(%{count} character minimum)"
-        other: "(%{count} characters minimum)"
+        one: "%{count} character minimum"
+        other: "%{count} characters minimum"
   admins:
     <<: *resource_translations
   activerecord:

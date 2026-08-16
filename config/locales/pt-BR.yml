@@ -30,6 +30,14 @@ pt-BR:
     unban: "Desbanir" # Opções: "Desbloquear" ou "Reativar"
   users: &resource_translations
     registrations:
+      edit:
+        are_you_sure: "Você tem certeza?"
+        cancel_my_account: "Cancelar minha conta"
+        leave_blank_if_you_don_t_want_to_change_it: "deixe em branco caso não queira alterá-la"
+        title: "Editar %{resource}"
+        unhappy: "Não está contente?"
+        update: "Atualizar"
+        we_need_your_current_password_to_confirm_your_changes: "precisamos da sua senha atual para confirmar suas mudanças"
       new:
         sign_up: "Inscrever-se"
         title: "Inscrever %{resource}"
@@ -47,8 +55,8 @@ pt-BR:
         sign_in_with_provider: "Entrar com %{provider}"
         sign_up: "Inscrever-se"
       minimum_password_length:
-        one: "(Mínimo de %{count} caractere)"
-        other: "(Mínimo de %{count} caracteres)"
+        one: "Mínimo de %{count} caractere"
+        other: "Mínimo de %{count} caracteres"
   admins:
     <<: *resource_translations
   activerecord:

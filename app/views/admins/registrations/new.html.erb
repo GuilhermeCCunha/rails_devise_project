@@ -13,7 +13,7 @@
     <div class="mb-3 w-50">
       <%= f.label :password, class: "form-label" %>
       <% if @minimum_password_length %>
-        <em><%= t('admins.shared.minimum_password_length', count: @minimum_password_length) %></em>
+        <em>(<%= t('admins.shared.minimum_password_length', count: @minimum_password_length) %>)</em>
       <% end %>
       <%= f.password_field :password, autocomplete: "new-password", class:"form-control border-dark-subtle" %>
     </div>
