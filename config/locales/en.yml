@@ -72,6 +72,7 @@ en:
       new:
         sign_up: "Sign up"
         title: "Sign up %{resource}"
+        limit_reached: "The maximum number of %{resource} has been reached."
     sessions:
       new:
         sign_in: "Log in"
