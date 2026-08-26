@@ -76,3 +76,7 @@ group :test do
 end
 
 gem "devise", "~> 5.0"
+
+group :production do
+  gem "pg"
+end
