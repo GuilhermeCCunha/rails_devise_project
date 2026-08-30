@@ -60,6 +60,10 @@ en:
     ban: "Ban"
     unban: "Unban"
   users: &resource_translations
+    passwords:
+      new:
+        forgot_your_password: "Forgot your password?"
+        send_me_reset_password_instructions: "Send me reset password instructions"
     registrations:
       edit:
         are_you_sure: "Are you sure?"
