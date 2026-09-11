@@ -26,6 +26,12 @@ services:
     networks:
       - postgres
 
+  mailcatcher:
+    image: sj26/mailcatcher:latest
+    ports:
+      - "1080:1080"
+      - "1025:1025"
+    restart: unless-stopped
 
 networks:
   postgres:
