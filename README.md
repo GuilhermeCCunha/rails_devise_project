@@ -1,7 +1,6 @@
-# README
+# Rails Devise Project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+__A Ruby on Rails application with Devise authentication.__
 
 Things you may want to cover:
 
