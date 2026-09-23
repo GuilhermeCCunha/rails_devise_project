@@ -2,6 +2,22 @@
 
 __A Ruby on Rails application with Devise authentication.__
 
+## Getting Started
+
+Clone or download zip file:
+
+```bash
+git clone https://github.com/GuilhermeCCunha/rails_devise_project.git
+```
+
+```bash
+bundle install
+```
+
+```bash
+yarn install
+```
+
 Things you may want to cover:
 
 * Ruby version
