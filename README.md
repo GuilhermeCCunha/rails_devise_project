@@ -18,6 +18,16 @@ bundle install
 yarn install
 ```
 
+## Development server
+
+To start a local development server, run:
+
+```bash
+bin/dev
+# or
+rails s
+```
+
 Things you may want to cover:
 
 * Ruby version
