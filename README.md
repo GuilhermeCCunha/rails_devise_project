@@ -28,6 +28,10 @@ bin/dev
 rails s
 ```
 
+## Author
+
+- GitHub: [@GuilhermeCCunha](https://github.com/GuilhermeCCunha)
+
 Things you may want to cover:
 
 * Ruby version
