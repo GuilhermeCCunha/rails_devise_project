@@ -32,6 +32,15 @@ rails s
 
 - GitHub: [@GuilhermeCCunha](https://github.com/GuilhermeCCunha)
 
+## Show your support
+
+Please ⭐️ this repository if you liked it!
+
+## License
+
+Copyright © 2025 [Guilherme Cunha](https://github.com/GuilhermeCCunha).<br />
+This project is [MIT](https://github.com/GuilhermeCCunha/rails_devise_project/blob/main/LICENSE) licensed.
+
 Things you may want to cover:
 
 * Ruby version
