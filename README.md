@@ -20,12 +20,28 @@ yarn install
 
 ## Development server
 
+Only if the database has not been created yet, run:
+
+```bash
+rails db:prepare
+# or
+rails db:create db:migrate
+```
+
 To start a local development server, run:
 
 ```bash
 bin/dev
 # or
 rails s
+```
+
+## Production server
+
+```bash
+RAILS_ENV=production bin/dev
+# or
+RAILS_ENV=production rails s
 ```
 
 ## Author
