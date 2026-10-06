@@ -10,9 +10,13 @@ Clone or download zip file:
 git clone https://github.com/GuilhermeCCunha/rails_devise_project.git
 ```
 
+Install Ruby Dependencies:
+
 ```bash
 bundle install
 ```
+
+Install JavaScript Dependencies:
 
 ```bash
 yarn install
@@ -37,6 +41,25 @@ rails s
 ```
 
 ## Production server
+
+You must delete the existing credentials file to prevent conflicts before generating a new master key:
+
+```bash
+rm config/credentials.yml.enc
+```
+
+This will generate a new `config/credentials.yml.enc` file and `config/master.key`. Sometimes, you need to specify your text editor for this to work. For example:
+
+```bash
+# Using Vim
+EDITOR=vim rails credentials:edit
+
+# Using Nano
+EDITOR=nano rails credentials:edit
+
+# Using Neovim
+EDITOR=nvim rails credentials:edit
+```
 
 ```bash
 RAILS_ENV=production bin/dev
