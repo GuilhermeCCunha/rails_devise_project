@@ -2,6 +2,13 @@
 
 __A Ruby on Rails application with Devise authentication.__
 
+## Services
+
+This project provides a `docker-compose.yml` file containing **PostgreSQL**, **pgAdmin**, and **MailCatcher**.
+
+* **PostgreSQL** and **pgAdmin:** Used exclusively to simulate the production environment setup locally.
+* **MailCatcher:** Used during development to catch outbound transactional emails (such as password recovery).
+
 ## Getting Started
 
 Clone or download zip file:
@@ -9,6 +16,8 @@ Clone or download zip file:
 ```bash
 git clone https://github.com/GuilhermeCCunha/rails_devise_project.git
 ```
+
+To run this project, you must have the specific versions of **Ruby** and **Rails** installed as defined in the `Gemfile`.
 
 Install Ruby Dependencies:
 
