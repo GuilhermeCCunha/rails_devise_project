@@ -1,5 +1,10 @@
 # Rails Devise Project
 
+![Ruby on Rails][ruby-on-rails]
+![Bootstrap][boostrap]
+[![GitHub repo size][github-img]][github-url]
+[![GitHub last commit][github-commit]][github-url]
+
 __A Ruby on Rails application with Devise authentication.__
 
 ## Services
@@ -49,6 +54,17 @@ bin/dev
 rails s
 ```
 
+### 📬 MailCatcher (Optional)
+Use MailCatcher from Docker Compose to intercept and view application emails locally via a web interface.
+
+1. Start the service in the background:
+   ```bash
+   docker compose up -d mailcatcher
+   ```
+   *(The `-d` flag runs the service in the background, keeping your terminal free).*
+2. Verify that `config/environments/development.rb` has `delivery_method` set to `:smtp`, `smtp_settings` port to `1025`, and `default_url_options` matching your Rails app port (e.g., `3000`, `3001`, or `3002`).
+3. Trigger a password recovery email and view it at **`http://localhost:1080`**.
+
 ## Production server
 
 You must delete the existing credentials file to prevent conflicts before generating a new master key:
@@ -88,6 +104,12 @@ Please ⭐️ this repository if you liked it!
 
 Copyright © 2025 [Guilherme Cunha](https://github.com/GuilhermeCCunha).<br />
 This project is [MIT](https://github.com/GuilhermeCCunha/rails_devise_project/blob/main/LICENSE) licensed.
+
+[github-img]: https://img.shields.io/github/repo-size/GuilhermeCCunha/rails_devise_project?logo=github&style=flat-square
+[github-url]: https://github.com/GuilhermeCCunha/rails_devise_project
+[github-commit]: https://img.shields.io/github/last-commit/GuilhermeCCunha/rails_devise_project?logo=github&style=flat-square
+[ruby-on-rails]: https://img.shields.io/badge/Ruby_on_Rails-CC0000?style=for-the-badge&logo=ruby-on-rails&logoColor=white&style=flat-square
+[boostrap]: https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white&style=flat-square
 
 Things you may want to cover:
 
