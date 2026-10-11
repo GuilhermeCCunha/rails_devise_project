@@ -14,6 +14,14 @@ This project provides a `docker-compose.yml` file containing **PostgreSQL**, **p
 * **PostgreSQL** and **pgAdmin:** Used exclusively to simulate the production environment setup locally.
 * **MailCatcher:** Used during development to catch outbound transactional emails (such as password recovery).
 
+## Features
+
+- Multi-scope authentication (Users/Admins) via Devise
+- Multi-language UI with a built-in language selector (i18n)
+- Admin dashboard to manage, ban, and unban users
+- Responsive layout using Bootstrap
+- Local email catching via MailCatcher
+
 ## Getting Started
 
 Clone or download zip file:
@@ -67,6 +75,18 @@ Use MailCatcher from Docker Compose to intercept and view application emails loc
 
 ## Production server
 
+Start the Postgres and pgAdmin containers via Docker with:
+
+```bash
+docker compose up
+```
+*(Optional: add `-d` to run in the background, like `docker compose up -d`)*
+
+* **Database Name:** `rails_devise_project_production`
+* **pgAdmin Web UI:** [http://localhost:8081](http://localhost:8081)
+* **Login Credentials:** `admin@root.com` | **Password:** `root`
+* **Notice:** Mailcatcher is not configured for the production environment.
+
 You must delete the existing credentials file to prevent conflicts before generating a new master key:
 
 ```bash
@@ -85,6 +105,20 @@ EDITOR=nano rails credentials:edit
 # Using Neovim
 EDITOR=nvim rails credentials:edit
 ```
+
+Precompile the project assets with:
+
+```bash
+RAILS_ENV=production rails assets:precompile
+```
+
+Setup the production database by running:
+
+```bash
+RAILS_ENV=production rails db:create db:migrate
+```
+
+To start a local production server, run:
 
 ```bash
 RAILS_ENV=production bin/dev
