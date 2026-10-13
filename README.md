@@ -22,6 +22,12 @@ This project provides a `docker-compose.yml` file containing **PostgreSQL**, **p
 - Responsive layout using Bootstrap
 - Local email catching via MailCatcher
 
+## Demonstration
+
+### Changing Language
+
+![rails_devise_project_language_selector](https://github.com/user-attachments/assets/6ffa663e-1b88-49e1-a72f-be334207cc41)
+
 ## Getting Started
 
 Clone or download zip file:
