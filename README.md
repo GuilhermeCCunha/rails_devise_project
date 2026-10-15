@@ -28,6 +28,24 @@ This project provides a `docker-compose.yml` file containing **PostgreSQL**, **p
 
 ![rails_devise_project_language_selector](https://github.com/user-attachments/assets/6ffa663e-1b88-49e1-a72f-be334207cc41)
 
+### Signing In as User
+
+![rails_devise_project_sign_in_as_user](https://github.com/user-attachments/assets/3a760391-a144-4d29-bad8-83c1628c7d41)
+
+### Signing In as Admin
+
+The application restricts the system to a maximum of **5 admin accounts** by default. This setting can be customized in `app/models/admin.rb`.
+
+![rails_devise_project_sign_in_as_admin](https://github.com/user-attachments/assets/d2d0d7b1-0ae6-4363-b725-a13f254a4cde)
+
+### Banning a User
+
+![rails_devise_project_ban_user](https://github.com/user-attachments/assets/f303af18-21b9-4cff-8402-95fed8c67c92)
+
+### Viewing Emails (Development)
+
+![rails_devise_project_mailcatcher](https://github.com/user-attachments/assets/7706ac9e-5ceb-419b-b529-3d59fb15aaab)
+
 ## Getting Started
 
 Clone or download zip file:
