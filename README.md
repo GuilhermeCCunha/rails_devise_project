@@ -1,4 +1,7 @@
 # Rails Devise Project
+🌏
+English |
+[**Português**][readme-pt-br]
 
 ![Ruby on Rails][ruby-on-rails]
 ![Bootstrap][boostrap]
@@ -6,6 +9,24 @@
 [![GitHub last commit][github-commit]][github-url]
 
 __A Ruby on Rails application with Devise authentication.__
+
+## Table of contents
+
+* [Services](#services)
+* [Features](#features)
+* [Demonstration](#demonstration)
+  * [Changing Language](#changing-language)
+  * [Signing In as User](#signing-in-as-user)
+  * [Signing In as Admin](#signing-in-as-admin)
+  * [Banning a User](#banning-a-user)
+  * [Viewing Emails (Development)](#viewing-emails-development)
+* [Getting Started](#getting-started)
+* [Development server](#development-server)
+  * [📬 MailCatcher (Optional)](#-mailcatcher-optional)
+* [Production server](#production-server)
+* [Author](#author)
+* [Show your support](#show-your-support)
+* [License](#license)
 
 ## Services
 
@@ -163,28 +184,9 @@ Please ⭐️ this repository if you liked it!
 Copyright © 2025 [Guilherme Cunha](https://github.com/GuilhermeCCunha).<br />
 This project is [MIT](https://github.com/GuilhermeCCunha/rails_devise_project/blob/main/LICENSE) licensed.
 
+[readme-pt-br]: https://github.com/GuilhermeCCunha/rails_devise_project/blob/main/README.pt-br.md
 [github-img]: https://img.shields.io/github/repo-size/GuilhermeCCunha/rails_devise_project?logo=github&style=flat-square
 [github-url]: https://github.com/GuilhermeCCunha/rails_devise_project
 [github-commit]: https://img.shields.io/github/last-commit/GuilhermeCCunha/rails_devise_project?logo=github&style=flat-square
 [ruby-on-rails]: https://img.shields.io/badge/Ruby_on_Rails-CC0000?style=for-the-badge&logo=ruby-on-rails&logoColor=white&style=flat-square
 [boostrap]: https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white&style=flat-square
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
