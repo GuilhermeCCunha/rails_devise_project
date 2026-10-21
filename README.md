@@ -108,6 +108,7 @@ rails s
 ```
 
 ### 📬 MailCatcher (Optional)
+
 Use MailCatcher from Docker Compose to intercept and view application emails locally via a web interface.
 
 1. Start the service in the background:
